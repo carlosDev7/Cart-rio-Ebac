@@ -105,7 +105,8 @@ int main()   //"int main" é a função principal  do código...ou o "body". | sempr
 	   printf("Escolha a opção desejada no menu:\n\n ");
    	   printf("\t1 - Registrar nomes\n"); // "\t" é para acrescentar espaçamento.
 	   printf("\t2 - Consultar nomes\n");
-	   printf("\t3 - Deletar nomes\n\n");
+	   printf("\t3 - Deletar nomes\n");
+	   printf("\t4 - Sair do sistema\n\n");
 	   printf("\tOpção:   ");
 	 
 
@@ -125,6 +126,11 @@ int main()   //"int main" é a função principal  do código...ou o "body". | sempr
     	case 3:
     	 deletar();
 		break;
+		
+		case 4:
+		 printf("Obrigado por utilizar o sistema!");
+		 return 0;
+		 break;
 		
 		default: // usamos 'default' para referirmos à uma opção que não mapeamos
 		printf("Esta opção não está disponível no momento.\n");
